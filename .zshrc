@@ -5,6 +5,12 @@
 #   https://github.com/mikelxc/Workarounds-for-ARM-mac#installation
 export PATH="/opt/homebrew/bin:$PATH"
 
+# This tells gem to place its gems within the user’s home folder, not 
+# in a system-wide location, and adds the path to any binaries
+# (like jekyll) to the user’s PATH ahead of any system-wide paths.
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/davidmazza/.oh-my-zsh"
 
