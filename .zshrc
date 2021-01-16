@@ -11,6 +11,15 @@ export PATH="/opt/homebrew/bin:$PATH"
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
+# Configure completions in ZSH
+#   https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/davidmazza/.oh-my-zsh"
 
