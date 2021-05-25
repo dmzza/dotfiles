@@ -9,7 +9,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 # in a system-wide location, and adds the path to any binaries
 # (like jekyll) to the user’s PATH ahead of any system-wide paths.
 export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+export PATH="$GEM_HOME/bin:$PATH"
 
 # Configure completions in ZSH
 #   https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
