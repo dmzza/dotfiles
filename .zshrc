@@ -11,6 +11,12 @@ export PATH="/opt/homebrew/bin:$PATH"
 export GEM_HOME="$HOME/gems"
 export PATH="$GEM_HOME/bin:$PATH"
 
+# This makes it possible to install Mint in the home directory
+# See this issue: https://github.com/yonaskolb/Mint/issues/188#issuecomment-799655593
+export MINT_PATH="$HOME/.mint"
+export MINT_LINK_PATH="$MINT_PATH/bin"
+export PATH="$MINT_LINK_PATH:$PATH"
+
 # Configure completions in ZSH
 #   https://docs.brew.sh/Shell-Completion#configuring-completions-in-zsh
 if type brew &>/dev/null; then
