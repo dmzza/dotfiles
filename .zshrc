@@ -1,10 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# This adds brew (and the packages managed by brew) to your PATH
-#   https://github.com/mikelxc/Workarounds-for-ARM-mac#installation
-export PATH="/opt/homebrew/bin:$PATH"
-
 # This tells gem to place its gems within the user’s home folder, not 
 # in a system-wide location, and adds the path to any binaries
 # (like jekyll) to the user’s PATH ahead of any system-wide paths.
