@@ -119,3 +119,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+### QuickScript added this python bin path for 'quick' to be global ###
+export PATH=/Users/davidmazza/Library/Python/3.9/bin:$PATH
